@@ -1,0 +1,36 @@
+{
+  "name": "elephant-harness-demo-nwjs",
+  "version": "0.5.0",
+  "description": "NW.js demo application for the elephant-harness package",
+  "main": "index.html",
+  "scripts": {
+    "nw-install": "nw install 0.19.5",
+    "start": "nw ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddmitov/elephant-harness-demo-nwjs.git"
+  },
+  "keywords": [
+    "php",
+    "asynchronous",
+    "child_process",
+    "nw.js"
+  ],
+  "author": "Dimitar D. Mitov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ddmitov/elephant-harness-demo-nwjs/issues"
+  },
+  "homepage": "https://github.com/ddmitov/elephant-harness-demo-nwjs#readme",
+  "dependencies": {
+    "elephant-harness": "^0.5.0",
+    "nwjs": "^1.0.0"
+  },
+  "window": {
+    "title": "elephant-harness nw.js demo",
+    "icon": "elephant.png",
+    "min_width": 800,
+    "min_height": 600
+  }
+}
