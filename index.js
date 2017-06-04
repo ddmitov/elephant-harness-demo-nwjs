@@ -6,10 +6,8 @@ const dirname = require('./dirname.js').dirname;
 
 var modulesDirectory = dirname.replace('elephant-harness-demo-nwjs', '');
 
-// Load the elephant-harness package:
 const elephantHarness = require(modulesDirectory + 'elephant-harness');
 
-// Determine the operating system and initialize 'path' object:
 var os = require('os');
 var platform = os.platform();
 
@@ -20,7 +18,6 @@ if (platform !== 'win32') {
   path = require('path').win32;
 }
 
-// PHP test script:
 function startTestScript() {
   var testScriptFullPath =
       path.join(dirname, 'php', 'phpinfo.php');
@@ -30,7 +27,10 @@ function startTestScript() {
   var testScriptObject = new Object();
   testScriptObject.interpreter = 'php-cgi';
   testScriptObject.scriptFullPath = testScriptFullPath;
-  testScriptObject.interpreterSwitches = '-q';
+
+  var interpreterSwitches = [];
+  interpreterSwitches.push('-q');
+  testScriptObject.interpreterSwitches = interpreterSwitches;
 
   testScriptObject.stdoutFunction = function(stdout) {
     testScriptOutput = testScriptOutput + stdout;
