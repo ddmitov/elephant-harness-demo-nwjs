@@ -22,7 +22,7 @@ Type in an empty directory:
 * ``path``
 
 ## NPM Dependencies
-* ``camel-harness``
+* ``elephant-harness``
 * ``nwjs``
 
 ## External Dependency
