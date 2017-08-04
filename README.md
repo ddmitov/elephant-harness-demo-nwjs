@@ -7,7 +7,7 @@ elephant-harness-demo-nwjs
 [![bitHound Status](https://www.bithound.io/github/ddmitov/elephant-harness-demo-nwjs/badges/code.svg)](https://www.bithound.io/github/ddmitov/elephant-harness-demo-nwjs)
 [![Snyk Status](https://snyk.io/test/github/ddmitov/elephant-harness-demo-nwjs/badge.svg)](https://snyk.io/test/github/ddmitov/elephant-harness-demo-nwjs)  
 
-elephant-harness-demo-nwjs is a demo application for the [elephant-harness](https://www.npmjs.com/package/elephant-harness) NPM package based on [NW.js](http://nwjs.io/).
+Demo application for the [elephant-harness](https://www.npmjs.com/package/elephant-harness) npm package based on [NW.js](http://nwjs.io/)
 
 ## Quick Start
 Type in an empty directory:  
