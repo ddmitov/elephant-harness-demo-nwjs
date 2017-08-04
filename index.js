@@ -3,9 +3,7 @@
 // elephant-harness demo for NW.js
 
 const dirname = require('./dirname.js').dirname;
-
 var modulesDirectory = dirname.replace('elephant-harness-demo-nwjs', '');
-
 const elephantHarness = require(modulesDirectory + 'elephant-harness');
 
 var os = require('os');
@@ -24,7 +22,7 @@ function startTestScript() {
 
   var testScriptOutput = '';
 
-  var testScriptObject = new Object();
+  var testScriptObject = {};
   testScriptObject.interpreter = 'php-cgi';
   testScriptObject.scriptFullPath = testScriptFullPath;
 
@@ -36,8 +34,19 @@ function startTestScript() {
     testScriptOutput = testScriptOutput + stdout;
   };
 
-  testScriptObject.exitFunction = function(stdout) {
-    document.write(testScriptOutput);
+  testScriptObject.errorFunction = function(error) {
+    if (error && error.code === 'ENOENT') {
+      var html = document.documentElement;
+      html.innerHTML =
+        '<h1><center>PHP interpreter was not found.</center></h1>';
+    }
+  };
+
+  testScriptObject.exitFunction = function(exitCode) {
+    if (exitCode === 0) {
+      var html = document.documentElement;
+      html.innerHTML = testScriptOutput;
+    }
   };
 
   elephantHarness.startScript(testScriptObject);
