@@ -1,33 +1,33 @@
-'use strict';
+"use strict";
 
 // elephant-harness demo for NW.js
 
-const ELEPHANT_HARNESS = require('../elephant-harness');
+const elephantHarness = require("../elephant-harness");
 
-let os = require('os');
+let os = require("os");
 let platform = os.platform();
 
 let path;
-if (platform !== 'win32') {
-  path = require('path').posix;
+if (platform !== "win32") {
+  path = require("path").posix;
 } else {
-  path = require('path').win32;
+  path = require("path").win32;
 }
 
-const DIRNAME = require('./dirname.js').dirname;
+const dirName = require("./dirname.js").dirname;
 
 function startTestScript() {
   let testScriptFullPath =
-      path.join(DIRNAME, 'php', 'phpinfo.php');
+      path.join(dirName, "php", "phpinfo.php");
 
-  let testScriptOutput = '';
+  let testScriptOutput = "";
 
   let testScriptObject = {};
-  testScriptObject.interpreter = 'php-cgi';
+  testScriptObject.interpreter = "php-cgi";
   testScriptObject.scriptFullPath = testScriptFullPath;
 
   let interpreterSwitches = [];
-  interpreterSwitches.push('-q');
+  interpreterSwitches.push("-q");
   testScriptObject.interpreterSwitches = interpreterSwitches;
 
   testScriptObject.stdoutFunction = function(stdout) {
@@ -35,10 +35,10 @@ function startTestScript() {
   };
 
   testScriptObject.errorFunction = function(error) {
-    if (error && error.code === 'ENOENT') {
+    if (error && error.code === "ENOENT") {
       let html = document.documentElement;
       html.innerHTML =
-        '<h1><center>PHP interpreter was not found.</center></h1>';
+        "<h1><center>PHP interpreter was not found.</center></h1>";
     }
   };
 
@@ -49,5 +49,5 @@ function startTestScript() {
     }
   };
 
-  ELEPHANT_HARNESS.startScript(testScriptObject);
+  elephantHarness.startScript(testScriptObject);
 }
