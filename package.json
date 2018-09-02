@@ -28,13 +28,8 @@
   "homepage": "https://github.com/ddmitov/elephant-harness-demo-nwjs#readme",
   "dependencies": {
     "elephant-harness": "^0.8.6",
-<<<<<<< HEAD
     "nwjs": "^1.4.4",
     "snyk": "^1.41.1"
-=======
-    "nwjs": "^1.0.0",
-    "snyk": "^1.88.2"
->>>>>>> 77f64c92553fec29f4f27fff9168686c238d43eb
   },
   "window": {
     "title": "elephant-harness nw.js demo",
