@@ -1,10 +1,10 @@
 {
   "name": "elephant-harness-demo-nwjs",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "NW.js demo application for the elephant-harness package",
   "main": "index.html",
   "scripts": {
-    "nw-install": "nw install 0.19.5",
+    "nw-install": "nw install 0.32.4",
     "start": "nw .",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect"
@@ -27,7 +27,7 @@
   "homepage": "https://github.com/ddmitov/elephant-harness-demo-nwjs#readme",
   "dependencies": {
     "elephant-harness": "^0.8.6",
-    "nwjs": "^1.0.0",
+    "nwjs": "^1.4.4",
     "snyk": "^1.41.1"
   },
   "window": {
