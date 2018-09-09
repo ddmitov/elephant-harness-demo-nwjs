@@ -24,7 +24,7 @@ function startTestScript() {
 
   let testScriptObject = {};
   testScriptObject.interpreter = "php-cgi";
-  testScriptObject.scriptFullPath = testScriptFullPath;
+  testScriptObject.script = testScriptFullPath;
 
   let interpreterSwitches = [];
   interpreterSwitches.push("-q");
