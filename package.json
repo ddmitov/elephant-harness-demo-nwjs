@@ -1,6 +1,6 @@
 {
   "name": "elephant-harness-demo-nwjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NW.js demo application for the elephant-harness package",
   "main": "index.html",
   "scripts": {
