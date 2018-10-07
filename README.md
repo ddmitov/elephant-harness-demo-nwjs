@@ -10,12 +10,11 @@ elephant-harness-demo-nwjs
 Demo application for the [elephant-harness](https://www.npmjs.com/package/elephant-harness) npm package based on [NW.js](http://nwjs.io/)
 
 ## Quick Start
-Type in an empty directory:  
-``npm init --yes``  
-``npm install elephant-harness-demo-nwjs``  
-``cd node_modules/elephant-harness-demo-nwjs``  
+``git clone git://github.com/ddmitov/elephant-harness-demo-nwjs``  
+``cd elephant-harness-demo-nwjs``  
+``npm install``  
 ``npm run nw-install``  
-``npm start``
+``npm start``  
 
 ## Core Dependencies
 * ``os``

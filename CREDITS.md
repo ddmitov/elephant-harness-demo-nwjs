@@ -10,8 +10,9 @@ http://www.iconarchive.com/show/animals-icons-by-shrikant-rawa/elephant-icon.htm
 
 ## JavaScript - Node.js - NW.js
 https://github.com/nwjs/nw.js/wiki/Changes-related-to-node  
-http://stackoverflow.com/questions/14989081/node-js-to-get-determine-os-version  
-http://stackoverflow.com/questions/3133243/how-do-i-get-the-path-to-the-current-script-with-node-js  
+
+https://stackoverflow.com/questions/14989081/node-js-to-get-determine-os-version  
+https://stackoverflow.com/questions/3133243/how-do-i-get-the-path-to-the-current-script-with-node-js  
 
 http://www.tutorialspoint.com/nodejs/nodejs_path_module.htm  
 
