@@ -1,14 +1,16 @@
-Thanks and Credits
---------------------------------------------------------------------------------
+# Thanks and Credits
+
 Amata mea Argeia - gratiam magnam tibi ago!  
 Patientia tua in studiis meis computatoriis auxilium meum maximum!  
 
 ## Elephant Icon
+
 Thanks to Shrikant Rawa for his beautiful elephant icon!  
 License: CC Attribution 4.0  
 http://www.iconarchive.com/show/animals-icons-by-shrikant-rawa/elephant-icon.html  
 
 ## JavaScript - Node.js - NW.js
+
 https://github.com/nwjs/nw.js/wiki/Changes-related-to-node  
 
 https://stackoverflow.com/questions/14989081/node-js-to-get-determine-os-version  
