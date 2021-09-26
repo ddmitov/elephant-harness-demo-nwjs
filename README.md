@@ -1,7 +1,5 @@
 # elephant-harness-demo-nwjs
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/13b2d8798177475080af01bef647ef7f)](https://www.codacy.com/app/ddmitov/elephant-harness-demo-nwjs?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ddmitov/elephant-harness-demo-nwjs&amp;utm_campaign=Badge_Grade)  
-
 Demo application for the [elephant-harness](https://www.npmjs.com/package/elephant-harness) npm package based on [NW.js](http://nwjs.io/)
 
 ## Quick Start
